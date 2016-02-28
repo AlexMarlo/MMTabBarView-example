@@ -16,6 +16,7 @@
 		25615EAF1C82C40E002F7FE9 /* MWC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25615EAE1C82C40E002F7FE9 /* MWC.m */; };
 		25615EB41C82C863002F7FE9 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25615EB31C82C863002F7FE9 /* MMTabBarView.framework */; };
 		25615EB51C82C869002F7FE9 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25615EB31C82C863002F7FE9 /* MMTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25615EBD1C833AFB002F7FE9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 25615EBC1C833AFB002F7FE9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		25615EAD1C82C3FD002F7FE9 /* MWC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWC.h; sourceTree = "<group>"; };
 		25615EAE1C82C40E002F7FE9 /* MWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWC.m; sourceTree = "<group>"; };
 		25615EB31C82C863002F7FE9 /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMTabBarView.framework; sourceTree = "<group>"; };
+		25615EBC1C833AFB002F7FE9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		25615E491C8206EE002F7FE9 = {
 			isa = PBXGroup;
 			children = (
+				25615EBC1C833AFB002F7FE9 /* README.md */,
 				25615EB31C82C863002F7FE9 /* MMTabBarView.framework */,
 				25615E541C8206EE002F7FE9 /* tabs */,
 				25615E681C8206EE002F7FE9 /* tabsTests */,
@@ -240,6 +243,7 @@
 			files = (
 				25615EAF1C82C40E002F7FE9 /* MWC.m in Sources */,
 				25615E5B1C8206EE002F7FE9 /* main.m in Sources */,
+				25615EBD1C833AFB002F7FE9 /* README.md in Sources */,
 				25615E591C8206EE002F7FE9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

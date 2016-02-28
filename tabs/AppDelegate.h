@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MWC.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-
+{
+    MWC *mainWindowController;
+    
+}
 @end
 

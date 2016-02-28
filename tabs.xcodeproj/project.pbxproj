@@ -12,6 +12,10 @@
 		25615E5D1C8206EE002F7FE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25615E5C1C8206EE002F7FE9 /* Images.xcassets */; };
 		25615E601C8206EE002F7FE9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25615E5E1C8206EE002F7FE9 /* MainMenu.xib */; };
 		25615E6C1C8206EE002F7FE9 /* tabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25615E6B1C8206EE002F7FE9 /* tabsTests.m */; };
+		25615E7A1C82073A002F7FE9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25615E791C82073A002F7FE9 /* MainWindow.xib */; };
+		25615EAF1C82C40E002F7FE9 /* MWC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25615EAE1C82C40E002F7FE9 /* MWC.m */; };
+		25615EB41C82C863002F7FE9 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25615EB31C82C863002F7FE9 /* MMTabBarView.framework */; };
+		25615EB51C82C869002F7FE9 /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25615EB31C82C863002F7FE9 /* MMTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +28,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25615E771C820706002F7FE9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25615EB51C82C869002F7FE9 /* MMTabBarView.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		25615E521C8206EE002F7FE9 /* tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25615E561C8206EE002F7FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +52,10 @@
 		25615E651C8206EE002F7FE9 /* tabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25615E6A1C8206EE002F7FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25615E6B1C8206EE002F7FE9 /* tabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabsTests.m; sourceTree = "<group>"; };
+		25615E791C82073A002F7FE9 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		25615EAD1C82C3FD002F7FE9 /* MWC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWC.h; sourceTree = "<group>"; };
+		25615EAE1C82C40E002F7FE9 /* MWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWC.m; sourceTree = "<group>"; };
+		25615EB31C82C863002F7FE9 /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMTabBarView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25615EB41C82C863002F7FE9 /* MMTabBarView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +80,7 @@
 		25615E491C8206EE002F7FE9 = {
 			isa = PBXGroup;
 			children = (
+				25615EB31C82C863002F7FE9 /* MMTabBarView.framework */,
 				25615E541C8206EE002F7FE9 /* tabs */,
 				25615E681C8206EE002F7FE9 /* tabsTests */,
 				25615E531C8206EE002F7FE9 /* Products */,
@@ -80,7 +103,10 @@
 				25615E581C8206EE002F7FE9 /* AppDelegate.m */,
 				25615E5C1C8206EE002F7FE9 /* Images.xcassets */,
 				25615E5E1C8206EE002F7FE9 /* MainMenu.xib */,
+				25615E791C82073A002F7FE9 /* MainWindow.xib */,
 				25615E551C8206EE002F7FE9 /* Supporting Files */,
+				25615EAD1C82C3FD002F7FE9 /* MWC.h */,
+				25615EAE1C82C40E002F7FE9 /* MWC.m */,
 			);
 			path = tabs;
 			sourceTree = "<group>";
@@ -121,6 +147,7 @@
 				25615E4E1C8206EE002F7FE9 /* Sources */,
 				25615E4F1C8206EE002F7FE9 /* Frameworks */,
 				25615E501C8206EE002F7FE9 /* Resources */,
+				25615E771C820706002F7FE9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,7 @@
 			files = (
 				25615E5D1C8206EE002F7FE9 /* Images.xcassets in Resources */,
 				25615E601C8206EE002F7FE9 /* MainMenu.xib in Resources */,
+				25615E7A1C82073A002F7FE9 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25615EAF1C82C40E002F7FE9 /* MWC.m in Sources */,
 				25615E5B1C8206EE002F7FE9 /* main.m in Sources */,
 				25615E591C8206EE002F7FE9 /* AppDelegate.m in Sources */,
 			);
@@ -326,6 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tabs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,6 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tabs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

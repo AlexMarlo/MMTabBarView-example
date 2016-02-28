@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MWC">
+            <connections>
+                <outlet property="btn" destination="1UL-dL-Th2" id="miZ-oR-gqG"/>
+                <outlet property="tBV" destination="p1R-Rr-YQW" id="b2q-7x-1Gm"/>
+                <outlet property="tV" destination="lZA-eI-LZ4" id="eQA-0f-Vcm"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="8My-g0-EwL"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="786" height="288"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="786" height="288"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p1R-Rr-YQW" customClass="MMTabBarView">
+                        <rect key="frame" x="17" y="251" width="718" height="26"/>
+                        <connections>
+                            <outlet property="tabView" destination="lZA-eI-LZ4" id="IaL-XZ-k6j"/>
+                        </connections>
+                    </customView>
+                    <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-eI-LZ4">
+                        <rect key="frame" x="25" y="34" width="755" height="199"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="Tab" identifier="1" id="Mfx-ZT-038">
+                                <view key="view" id="hss-fE-C0f">
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="View" identifier="2" id="DZW-50-8I1">
+                                <view key="view" id="kpw-at-SOe">
+                                    <rect key="frame" x="10" y="33" width="157" height="78"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                        <connections>
+                            <outlet property="delegate" destination="p1R-Rr-YQW" id="THl-eY-NqN"/>
+                        </connections>
+                    </tabView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1UL-dL-Th2">
+                        <rect key="frame" x="736" y="247" width="43" height="32"/>
+                        <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qrK-fS-CLN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="performClick:" target="-2" id="z2o-uY-E5T"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="293" y="157"/>
+        </window>
+        <userDefaultsController id="NPw-nx-3pM"/>
+    </objects>
+</document>

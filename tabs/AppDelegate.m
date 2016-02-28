@@ -1,26 +1,25 @@
 //
 //  AppDelegate.m
-//  tabs
+//  NeverOK
 //
-//  Created by xanm on 27/02/16.
-//  Copyright (c) 2016 acmecoders. All rights reserved.
+//  Created by Sp1DeR on 08.03.15.
+//  Copyright (c) 2015 Sp1DeR App. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
-@end
+#import "MWC.h"
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
     // Insert code here to initialize your application
-}
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    
+    mainWindowController = [[MWC alloc] initWithWindowNibName:@"MainWindow"];
+    [mainWindowController showWindow:self];
+    [mainWindowController addTab:@"tab1"];
+    
+    
 }
 
 @end
